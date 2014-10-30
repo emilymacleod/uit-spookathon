@@ -1,0 +1,21 @@
+#messsage {
+background-color: red;
+position: absolute; 
+z-index: 2;
+
+}
+
+#picture {
+position: absolute; 
+z-index: 1;
+top: 100px; 
+left: 100px; 
+
+}
+
+#blueBox{
+ background-color: blue;
+ height: 300px;
+ width: 300px;
+ 
+}

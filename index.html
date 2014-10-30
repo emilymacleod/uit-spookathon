@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Halloween Hackathon</title>
+</head>
+
+<body>
+
+	<style type="text/css">
+	#blueBox{
+ 	background-color: blue;
+ 	height: 300px;
+ 	width: 300px;
+	}
+	</style>
+
+	<div id="sabrina">
+		<img src="sabrina.png">
+		<button id="myButton">Click this</button>
+	</div>
+
+	<div id="message">
+	</div>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$("#myButton").click(function(){
+	$("#blueBox").toggle();
+	}); 
+});
+</script>
+
+</body>
+
+</html>
+
