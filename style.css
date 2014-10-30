@@ -1,16 +1,21 @@
-#messsage {
-background-color: red;
-position: absolute; 
-z-index: 2;
+#mybox {
+        position: absolute; 
+        left: 100px; 
+        top: 260px; 
+        z-index: 1; 
+        width:320px; 
+        height:130px; 
+        background-color: transparent; 
+        display: block; 
+        font-size: 30px; 
+        text-align: center;
+}   
 
-}
-
-#picture {
-position: absolute; 
-z-index: 1;
-top: 100px; 
-left: 100px; 
-
+#sabrina {
+		position: absolute; 
+		z-index: 1;
+		top: 100px; 
+		left: 100px; 
 }
 
 #blueBox{
@@ -19,3 +24,17 @@ left: 100px;
  width: 300px;
  
 }
+
+ p {
+ 		position: absolute;
+ 		left: 300px;
+ 		top:300px;
+        width: 250px; 
+        height: 60px; 
+        background-color: transparent;
+        text-align: center; 
+        padding: 9px; 
+        font-size: 20px; 
+        font-family: arial;
+        z-index: 1;         
+      }

@@ -3,27 +3,34 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="javascript" href="script.js">
 
-	<style type="text/css">
-	#blueBox{
- 	background-color: blue;
- 	height: 300px;
- 	width: 300px;
-	}
-	</style>
-
 	<title>Halloween Hackathon</title>
 
 <script type="text/javascript" 
 src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
 </script> 
+
 <script type="text/javascript">
 
-	<script type="text/javascript">
-	$(document).ready(function(){
-	$("#myButton").click(function(){
-	$("#blueBox").toggle();
-	}); 
-});
+function getQuote() {
+	var quotes = new Array("Halloween, also known as All Hallows' Eve, can be traced back about 2,000 years to a pre-Christian Celtic festival held around Nov. 1 called Samhain (pronounced sah-win), which means summer's end in Gaelic",
+
+"The tradition of dressing in costumes and trick-or-treating may go back to the practice of mumming and guising, in which people would disguise themselves and go door-to-door, asking for food",
+
+"In Great Britain, Jack-O-Lanterns are traditionally made from turnips",
+
+"Halloween is a $6 billion industry",
+
+"In Mexico on October 31 (or the early morning of November 1), there is a holiday called Day of the Dead", 
+
+"Samhainophobia is the fear of Halloween",
+
+"Ireland is typically believed to be the birthplace of Halloween");
+
+var randomChoice = Math.floor(Math.random()* quotes.length)
+
+ $("#myBox").html(quotes[randomChoice]);
+
+ } 
 
 </script>
 
@@ -33,10 +40,14 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
 
 	<div id="sabrina">
 		<img src="sabrina.png">
-		<button id="myButton">Click this</button>
 	</div>
 
-	<div id="message">message here</div>
+	<div id="myBox">
+What do you want to know about Halloween?</div>
+
+	<p>
+     <a href="javascript:getQuote()">Trick!</a>
+   </p>
 
 </body>
 
